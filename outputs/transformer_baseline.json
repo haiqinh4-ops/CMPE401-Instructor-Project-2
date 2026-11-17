@@ -1,0 +1,17 @@
+{
+  "run_mode": "full",
+  "model": "Transformer classification baseline",
+  "dataset": "FordA",
+  "train_samples": 3601,
+  "test_samples": 1320,
+  "input_shape": [
+    500,
+    1
+  ],
+  "parameters": 93130,
+  "epochs_run": 139,
+  "best_val_accuracy": 0.8710125088691711,
+  "test_loss": 0.3267824649810791,
+  "test_accuracy": 0.8628787994384766,
+  "train_seconds": 3362.14
+}
