@@ -2,7 +2,7 @@
 
 **Time Series Modelling with Deep Learning: Transformer Classification and LSTM Forecasting**
 
-This repository reproduces and organizes two **Keras-based** time-series experiments, and benchmarks three one-at-a-time LSTM modifications. The results below come from a completed **full** Colab training run; generated CSV/JSON and plots are committed in [`outputs/`](outputs/). The original examples were used as starting points; implementation adaptations are disclosed below.
+This project implements and evaluates two deep learning approaches for time-series analysis based on official Keras examples: Transformer-based classification on the FordA dataset and LSTM-based forecasting on the Jena Climate dataset. Three controlled modifications to the LSTM baseline are evaluated to examine their effects on predictive performance. The repository includes the implementation, experimental results, visualizations, and reproducibility instructions.
 
 ## Project objectives and deliverables
 
@@ -107,7 +107,6 @@ outputs/
   lstm_benchmark.csv          # Four measured forecasting runs
   lstm_benchmark.png
   PROJECT_SUMMARY.md          # Raw auto-generated text summary
-SUBMISSION_GUIDE_CN.md        # Submission checklist in Chinese
 ```
 
 ## Limitations / research integrity
@@ -121,6 +120,6 @@ SUBMISSION_GUIDE_CN.md        # Submission checklist in Chinese
 ## References
 
 - Ntakouris, T. (2021). [Timeseries classification with a Transformer model](https://keras.io/examples/timeseries/timeseries_classification_transformer/). Keras Examples.
-- Attri, P., Sharma, Y., Takach, K., & Shah, F. (2023 update). [Timeseries forecasting for weather prediction](https://keras.io/examples/timeseries/timeseries_weather_forecasting/). Keras Examples.
+- Attri, P., Sharma, Y., Takach, K., & Shah, F. (2020; updated 2023). [Timeseries forecasting for weather prediction](https://keras.io/examples/timeseries/timeseries_weather_forecasting/). Keras Examples.
 - FordA dataset (via [hfawaz/cd-diagram](https://github.com/hfawaz/cd-diagram/tree/master/FordA)).
 - Jena Climate dataset (Max Planck Institute for Biogeochemistry; [Keras dataset mirror](https://storage.googleapis.com/tensorflow/tf-keras-datasets/jena_climate_2009_2016.csv.zip)).
