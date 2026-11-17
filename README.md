@@ -74,6 +74,7 @@ I found the LSTM baseline easier to understand because its main architecture is 
 **2. What improvement did you try, and what did you learn from it?**
 
 I compared three changes to the LSTM baseline: 64 instead of 32 hidden units, a second LSTM layer, and a smaller learning rate of 0.0005. The smaller learning rate produced the lowest validation MSE (0.11136, versus 0.13166 for the baseline), an improvement of 15.42%. Stacking layers also helped, but increasing units alone made the validation error worse. I learned that controlled evaluation matters more than simply making a model larger.
+During the Transformer experiment, I also encountered an important training issue. The initial model was configured for up to 150 epochs, but its validation accuracy remained around 51.6%, with a loss close to 0.693. After examining the model architecture, I found that the GlobalAveragePooling1D layer compressed the 500 time steps into a single value, potentially removing important temporal information. I replaced this layer with Flatten to preserve the sequence features. After retraining, the model achieved a test accuracy of 86.29%. This experience taught me that increasing training time cannot compensate for an unsuitable model structure. When a model fails to learn, examining the data flow and architecture is often more useful than simply running additional epochs.
 
 ## Reproduce the experiment
 
