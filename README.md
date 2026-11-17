@@ -65,7 +65,7 @@ Each run changes exactly one model or optimizer setting relative to LSTM(32) bas
 
 ![LSTM validation curves and benchmark](outputs/lstm_benchmark.png)
 
-## Instructor questions (proposed reflection wording — confirm it reflects your experience)
+## Instructor Questions and Reflections
 
 **1. Which model did you find easier to understand and why?**
 
